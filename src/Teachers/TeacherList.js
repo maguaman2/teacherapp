@@ -1,9 +1,24 @@
 
 function TeacherList(props){
 return(
-    <ul>
+    <table>
+    <thead >
+      <tr>
+        <th >Id</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Correo</th>
+        <th>Sexo</th>
+        <th>Estado Civil</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    
         {props.children}
-    </ul>
+    
+        </tbody>
+  </table>
 );
 }
 
